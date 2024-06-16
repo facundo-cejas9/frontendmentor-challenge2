@@ -6,52 +6,6 @@ body {
   
 }
 
-.required-label {
-  margin-bottom: 10px;
-}
-
-
-
-
-.input-form {
-  height: 40px;
-  border-radius: 10px;
-  border: 1px solid hsl(186, 15%, 59%)
-}
-
-.input-form:focus {
-  outline: 1px solid hsl(169, 82%, 27%);
-}
-
-.input-error {
-  height: 40px;
-  border-radius: 10px;
-  border: 1px solid red
-}
-
-.input-error:focus {
-  outline: 1px solid red
-}
-
-
-.error {
-  color: red;
-  font-size: 0.8rem;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.textarea-form {
-  height: 150px;
-  border-radius: 10px;
-  border: 1px solid hsl(186, 15%, 59%)
-}
-
-.textarea-error {
-  height: 40px;
-  border-radius: 10px;
-  border: 1px solid red
-}
 
 
 
@@ -113,7 +67,7 @@ body {
 
 .required-label::after {
   content: " *";
-  color: red;
+  color: hsl(169, 82%, 27%)
 }
 
 
@@ -147,8 +101,10 @@ body {
 
 /* Ajuste de tamaño del botón de radio */
 .doble-inputs-radio input {
-  width: 15px;
+  width: 20px;
 }
+
+
 
 .checkbox {
   display: flex;
@@ -171,7 +127,132 @@ body {
   cursor: pointer;
 }
 
-.form-group-radio input:focus {
-  border: none !important;
+.required-label {
+  margin-bottom: 10px;
 }
 
+.input-radio {
+  height: 40px;
+}
+
+
+.input-form {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid hsl(186, 15%, 59%)
+}
+
+.input-form:focus {
+  outline: 1px solid hsl(169, 82%, 27%);
+}
+
+.input-error {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid red
+}
+
+
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.textarea-form {
+  height: 150px;
+  border-radius: 10px;
+  border: 1px solid hsl(186, 15%, 59%);
+  font-size: 20px;
+  padding: 10px;
+}
+
+.textarea-error {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid red;
+  height: 150px;
+  font-size: 15px;
+}
+
+.check-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.checked {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  border: 1px solid  hsl(169, 82%, 27%);
+  background: hsl(148, 38%, 91%);
+  padding: 5px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+
+ input[type="radio"]:checked {
+  width: 20px;
+  
+}
+
+.notification-container {
+ position: absolute;
+ top: 10px;
+}
+
+.notification {
+background: hsl(169, 82%, 27%);
+border-radius: 15px;
+padding: 5px 20px;
+animation: fadeIn 1s ease-in-out
+}
+
+.notification-title {
+  display: flex;
+  gap: 10px;
+}
+
+.notification-title h3 {
+  color: white;
+}
+
+.notification p {
+  color: white;
+  font-size: 0.8rem;
+  margin-top: 0px;
+}
+
+
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .form-group {
+    flex-direction: column;
+  }
+
+  .form-group-radio {
+    flex-direction: column;
+  }
+  
+  .doble-inputs-radio{
+    width: 100%;
+    padding: 0px;
+  }
+}
