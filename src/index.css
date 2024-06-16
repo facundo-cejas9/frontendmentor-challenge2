@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Karla";
+  
+}
+
+.required-label {
+  margin-bottom: 10px;
+}
+
+
+
+
+.input-form {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid hsl(186, 15%, 59%)
+}
+
+.input-form:focus {
+  outline: 1px solid hsl(169, 82%, 27%);
+}
+
+.input-error {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid red
+}
+
+.input-error:focus {
+  outline: 1px solid red
+}
+
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.textarea-form {
+  height: 150px;
+  border-radius: 10px;
+  border: 1px solid hsl(186, 15%, 59%)
+}
+
+.textarea-error {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid red
+}
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% ;
+  background: #dff1e7;
+  min-height: 100vh;
+  
+
+}
+
+.form-container {
+  max-width: 650px;
+  width: 100%;
+  min-width: 300px;
+  background: white;
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+  gap: 10px;
+}
+
+.form-group {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  
+}
+
+
+.doble-inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group1 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+
+
+.doble-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.required-label::after {
+  content: " *";
+  color: red;
+}
+
+
+
+.radio-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  
+}
+
+
+.form-group-radio {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px; /* Espacio entre las opciones de radio */
+  
+}
+
+/* Cada opción de radio en formato de fila */
+.doble-inputs-radio {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre el botón de radio y su etiqueta */
+  border: 1px solid hsl(186, 15%, 59%);
+  padding: 5px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+/* Ajuste de tamaño del botón de radio */
+.doble-inputs-radio input {
+  width: 15px;
+}
+
+.checkbox {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 5px;
+  background: hsl(169, 82%, 27%);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-group-radio input:focus {
+  border: none !important;
+}
+
